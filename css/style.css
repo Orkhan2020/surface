@@ -1,0 +1,275 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+@font-face {
+    font-family: "Open sans";
+    src: url('../fonts/OpenSans-Bold.ttf') format('truetype'),
+         url('../fonts/OpenSans-Bold.woff') format('woff'),
+         url('../fonts/OpenSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Open sans";
+    src: url('../fonts/OpenSans-Regular.ttf') format('truetype'),
+         url('../fonts/OpenSans-Regular.woff') format('woff'),
+         url('../fonts/OpenSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+    font-family: Arial, "Open sans", sans-serif;
+    
+}
+.header {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.header::before {
+    content: "";
+    background-color: #0a0e34;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.9; 
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 320px;  
+    width: 100%;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    z-index: 3;
+}
+
+.logo{
+    display: block;
+    fill: #ffffff;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.content {
+    width: 100%;
+    margin-bottom: 89px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.title {
+   justify-content: flex-start;
+   color: #ffffff;
+   font-family: "Open Sans";
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+.subtitle {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.icon {
+    fill: #ffffff;
+}
+
+.downloads-item {
+    display: flex;
+     
+}
+.downloads-list {
+    
+}
+
+.downloads-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    background-color: #5e42b0;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+
+@media (max-width: 767px) {
+.header {
+    background-image: url(../img/football_767.jpg);
+}
+
+}
+@media (min-width: 768px) and (max-width: 1280px) {
+    .header {
+    background-image: url(../img/football_1280.jpg);
+}
+}
+@media (min-width: 1281px) {
+    .header {
+    background-image: url(../img/football_1920.jpg);
+}
+}
+
+@media (max-width: 640px){  
+.container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 3.3rem;
+    margin-bottom: 13.6rem;
+    width: 133px;
+}
+.title {
+    font-size: 28px;
+    letter-spacing: 1.4px;
+    margin-bottom: 2.9rem;
+}
+
+.subtitle {
+    max-width: 244px;
+}
+.downloads-item {
+    margin-bottom: 8.4rem;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.downloads-list {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.downloads-link {
+   padding: 5px;
+   font-size: 8px;
+   letter-spacing: 0.4px;
+}
+.icon {
+   width: 24px;
+}
+.link {
+   margin-left: 1rem;
+}
+
+}
+ @media (min-width: 641px) and (max-width: 960px) {
+   .logo {
+    margin-top: 4rem;
+    margin-bottom: 18rem;
+    width: 205px;
+}
+
+.title {
+    font-size: 64px;
+    letter-spacing: 3.52px;
+    margin-bottom: 3rem;
+}
+.subtitle {
+    max-width: 508px;
+}
+.downloads-item {
+    margin-bottom: 9rem;
+     width: 100%;
+}
+.downloads-list {
+    margin-right: 3rem;
+    width: 100%;
+}
+.downloads-list:nth-child(2){
+    margin-right: 0;
+    
+}
+
+.downloads-link {
+   padding: 18px;
+   font-size: 14px;
+   letter-spacing: 0.7px;
+}
+.icon {
+   width: 40px;
+}
+.link {
+   margin-left: 2.8rem;
+}
+}
+
+@media (min-width: 961px) {
+  .container {
+    max-width: 1570px;
+
+    }
+ .logo {
+    margin-top: 4.5rem;
+    margin-bottom: 29.5rem;
+    width: 205px;
+}
+.title {
+    font-size: 90px;
+    letter-spacing: 4.96px;
+    margin-bottom: 4rem;
+}
+.subtitle {
+    max-width: 80%;
+}
+.downloads-item {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 9rem;
+    width: 80%;
+}
+.downloads-list {
+    margin-right: 5rem;
+    width: 311px;
+}
+.downloads-list:nth-child(2){
+    margin-right: 0;
+}
+
+.downloads-link {
+   padding: 14px;
+   font-size: 14px;
+   letter-spacing: 0.7px;
+}
+.icon {
+   width: 40px;
+}
+.link {
+   margin-left: 2.5rem;
+}
+}

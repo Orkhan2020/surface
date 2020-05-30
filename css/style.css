@@ -122,6 +122,72 @@ body {
     text-transform: uppercase;
 }
 
+/*========================================================HEADER==============================================================*/
+.heading {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+.athlets_title {
+  color: #e7e7e7;
+  font-family: "Open Sans";
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+.list_item {
+    list-style: none;
+}
+
+.collaboration{
+    background-color: #f5f4f9;
+}
+.growth{
+    color: #ffffff;
+    background-color: #5e42b0;
+}
+.list_title {
+  color: #c1c1c1;
+  font-family: "Open Sans";
+  font-weight: 700;
+  line-height: 34.49px;
+  text-transform: uppercase;
+
+}
+.list_number {
+    display: inline-block;
+  position: relative;
+  color: #000000;
+  font-family: "Open Sans";
+  font-weight: 700;
+  line-height: 34.49px;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+.list_number::after {
+    content: "";
+    position: absolute;
+    vertical-align: top;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #5e42b0;
+    border-radius: 2px;
+}
+.growth .list_number::after{
+    background-color: #fff;
+}
+
+.list_text {
+   font-family: "Open Sans";
+   font-weight: 400;
+   line-height: 18px;
+}
+
+
 
 
 @media (max-width: 767px) {
@@ -186,7 +252,51 @@ body {
    margin-left: 1rem;
 }
 
+/*==========HEADER===========*/
+.athlets_title {
+    align-self: flex-start;
+    font-size: 50px;
+    margin-bottom: 245px;
+    margin-left: 20px; 
 }
+
+
+.list_title {
+    font-size: 23px;
+    letter-spacing: 1.15px;
+    padding-top: 83px;
+    margin-bottom: 27px;
+}
+.list_number {
+    vertical-align: top;
+    font-size:14px;
+    letter-spacing: 0.7px;
+}
+.list_text {
+    width: 100%;
+    font-size: 15px;
+    letter-spacing: 0.75px;
+    padding-bottom: 50px;
+}
+.athlets_container {
+    position: relative;
+}
+.athlets_container::before {
+     content: "";
+     background-image: url(../img/footballer_192.png);
+     background-repeat: no-repeat ;
+     background-position: center;
+     width: 100%;
+     height: 281px;
+     position: absolute;
+     left: 0;
+     top: 69px;
+     z-index: 10;
+}
+}
+
+
+
  @media (min-width: 641px) and (max-width: 960px) {
    .logo {
     margin-top: 4rem;
@@ -226,7 +336,64 @@ body {
 .link {
    margin-left: 2.8rem;
 }
+
+/*==========HEADER===========*/
+.athlets_title {
+    width: 60%;
+    margin-left: auto;
+    margin-bottom: 0px;
+    padding-top: 85px;
+    font-size: 80px;
 }
+.heading {
+    width: 60%;
+    margin-left: auto;
+     display: flex;
+    flex-wrap: wrap;
+    
+}
+._list {
+   
+}
+.list_item {
+    
+
+}
+.list_title {
+    font-size: 32px;
+    letter-spacing: 1.6px;
+    padding-top: 61px;
+    margin-bottom: 32px;
+}
+.list_number {
+    vertical-align: top;
+    font-size:14px;
+    letter-spacing: 0.9px;
+}
+.list_text {
+    width: 100%;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding-bottom: 36px;
+    justify-content: flex-end;
+}
+.athlets_container {
+    position: relative;
+}
+.athlets_container::before {
+     content: "";
+     background-image: url(../img/footballer_497.png);
+     background-repeat: no-repeat ;
+     background-position: left;
+     width: 100%;
+     height: 780px;
+     position: absolute;
+     left:-180px;
+     top: 94px;
+     z-index: 1;
+}
+}
+
 
 @media (min-width: 961px) {
   .container {
@@ -272,4 +439,82 @@ body {
 .link {
    margin-left: 2.5rem;
 }
+.athlets_container {
+
 }
+.athlets_title {
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-top: 85px;
+    font-size: 80px;
+}
+.heading {
+    margin-left: auto;
+     display: flex;
+    flex-wrap: wrap;
+    
+}
+._list {
+   
+}
+.list_item {
+    
+
+}
+.list_title {
+    font-size: 32px;
+    letter-spacing: 1.6px;
+    padding-top: 61px;
+    margin-bottom: 32px;
+}
+.list_number {
+    vertical-align: top;
+    font-size:14px;
+    letter-spacing: 0.9px;
+}
+.list_text {
+    width: 100%;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding-bottom: 36px;
+    justify-content: flex-end;
+}
+.athlets_container {
+    position: relative;
+}
+.athlets_container::before {
+     content: "";
+     background-image: url(../img/footballer_566.png);
+     background-repeat: no-repeat ;
+     background-position: left; 
+     width:60%;
+     height: 900px;
+     position: absolute;
+     left:0px;
+     top: 27px;
+     z-index: 10;
+}
+}
+
+@media (min-width: 961px) and (max-width: 1280px){
+    .heading {
+    width: 40%;
+    }
+    .athlets_title {
+    width: 40%;
+}
+}
+@media (min-width: 1281px){
+    .heading {
+    width: 45%;
+    }
+    .athlets_title {
+    width: 45%;
+}
+.athlets_container::before {
+     width:45%;
+     left:150px;  
+}
+}
+

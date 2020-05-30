@@ -104,10 +104,6 @@ body {
 
 .downloads-item {
     display: flex;
-     
-}
-.downloads-list {
-    
 }
 
 .downloads-link {
@@ -123,11 +119,14 @@ body {
 }
 
 /*========================================================HEADER==============================================================*/
+.athlets {
+    margin-bottom: 49px;
+}
+
 .heading {
     padding-right: 20px;
     padding-left: 20px;
 }
-
 
 .athlets_title {
   color: #e7e7e7;
@@ -148,6 +147,9 @@ body {
     color: #ffffff;
     background-color: #5e42b0;
 }
+.players_growth {
+    background-color: #090c35;
+}
 .list_title {
   color: #c1c1c1;
   font-family: "Open Sans";
@@ -157,7 +159,7 @@ body {
 
 }
 .list_number {
-    display: inline-block;
+  display: inline-block;
   position: relative;
   color: #000000;
   font-family: "Open Sans";
@@ -179,6 +181,9 @@ body {
 }
 .growth .list_number::after{
     background-color: #fff;
+}
+.players_growth .list_number {
+    color: #8765dd;
 }
 
 .list_text {
@@ -214,8 +219,6 @@ body {
 }
 
 .logo {
-    margin-right: auto;
-    margin-left: auto;
     margin-top: 3.3rem;
     margin-bottom: 13.6rem;
     width: 133px;
@@ -259,7 +262,9 @@ body {
     margin-bottom: 245px;
     margin-left: 20px; 
 }
-
+.connection {
+    background-color: #fafafa;
+}
 
 .list_title {
     font-size: 23px;
@@ -293,9 +298,24 @@ body {
      top: 69px;
      z-index: 10;
 }
+/*----------------------athlets---------------------*/
+  .players_container {
+    position: relative;
+  }
+  .players_container::before {
+     content: "";
+     background-image: url(../img/basketballer_302.png);
+     background-repeat: no-repeat ;
+     background-position: center;
+     width: 100%;
+     height: 281px;
+     position: absolute;
+     right: 0;
+     top: 69px;
+     z-index: 10;
 }
 
-
+}
 
  @media (min-width: 641px) and (max-width: 960px) {
    .logo {
@@ -322,7 +342,6 @@ body {
 }
 .downloads-list:nth-child(2){
     margin-right: 0;
-    
 }
 
 .downloads-link {
@@ -350,19 +369,13 @@ body {
     margin-left: auto;
      display: flex;
     flex-wrap: wrap;
-    
+    padding-top: 55px;
+    padding-bottom: 55px;
 }
-._list {
-   
-}
-.list_item {
-    
 
-}
 .list_title {
     font-size: 32px;
     letter-spacing: 1.6px;
-    padding-top: 61px;
     margin-bottom: 32px;
 }
 .list_number {
@@ -374,7 +387,6 @@ body {
     width: 100%;
     font-size: 20px;
     letter-spacing: 1px;
-    padding-bottom: 36px;
     justify-content: flex-end;
 }
 .athlets_container {
@@ -392,14 +404,44 @@ body {
      top: 94px;
      z-index: 1;
 }
+/*----------------------athlets---------------------*/
+.players_heading {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 60%;
+}
+
+.players_container {
+    position: relative;
+}
+.players_container::before {
+     content: "";
+     background-image: url(../img/basketballer_436.png);
+     background-repeat: no-repeat ;
+     background-position: right;
+     width: 100%;
+     height: 640px;
+     position: absolute;
+     right: 0px;
+     top: 0px;
+     z-index: 1;
+}
+.players_title {
+    margin-left: 0;
+    margin-right: auto;
+    padding-left: 20px;
+}
+.players_heading {
+    margin-left: 0;
+    margin-right: auto;
+}
 }
 
 
 @media (min-width: 961px) {
   .container {
     max-width: 1570px;
-
-    }
+}
  .logo {
     margin-top: 4.5rem;
     margin-bottom: 29.5rem;
@@ -433,39 +475,35 @@ body {
    font-size: 14px;
    letter-spacing: 0.7px;
 }
+.downloads-link:hover {
+   background-color: #4d3191;
+   color: #bdace3; 
+}
 .icon {
    width: 40px;
 }
 .link {
    margin-left: 2.5rem;
 }
-.athlets_container {
 
-}
 .athlets_title {
     margin-left: auto;
     margin-top: 0;
-    margin-bottom: 0px;
+    margin-bottom:50px;
     padding-top: 85px;
     font-size: 80px;
 }
 .heading {
     margin-left: auto;
-     display: flex;
-    flex-wrap: wrap;
-    
+    display: flex;
+    flex-wrap: wrap; 
+    padding-top: 55px;
+    padding-bottom: 55px;
 }
-._list {
-   
-}
-.list_item {
-    
 
-}
 .list_title {
     font-size: 32px;
     letter-spacing: 1.6px;
-    padding-top: 61px;
     margin-bottom: 32px;
 }
 .list_number {
@@ -477,7 +515,6 @@ body {
     width: 100%;
     font-size: 20px;
     letter-spacing: 1px;
-    padding-bottom: 36px;
     justify-content: flex-end;
 }
 .athlets_container {
@@ -494,6 +531,30 @@ body {
      left:0px;
      top: 27px;
      z-index: 10;
+}
+.players_container {
+    position: relative;
+}
+.players_container::before {
+     content: "";
+     background-image: url(../img/basketballer_991.png);
+     background-repeat: no-repeat ;
+     background-position: right;
+     width: 100%;
+     height: 815px;
+     position: absolute;
+     right: 0px;
+     top: -30px;
+     z-index: 1;
+}
+.players_title {
+    margin-left: 0;
+    margin-right: auto;
+    padding-left: 20px;
+}
+.players_heading {
+    margin-left: 0;
+    margin-right: auto;
 }
 }
 

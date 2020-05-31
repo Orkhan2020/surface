@@ -147,9 +147,7 @@ body {
     color: #ffffff;
     background-color: #5e42b0;
 }
-.players_growth {
-    background-color: #090c35;
-}
+
 .list_title {
   color: #c1c1c1;
   font-family: "Open Sans";
@@ -179,8 +177,12 @@ body {
     background-color: #5e42b0;
     border-radius: 2px;
 }
+/*========================================================ATHLETS==============================================================*/
 .growth .list_number::after{
     background-color: #fff;
+}
+.players_growth {
+    background-color: #090c35;
 }
 .players_growth .list_number {
     color: #8765dd;
@@ -192,6 +194,27 @@ body {
    line-height: 18px;
 }
 
+/*========================================================PLAYERS==============================================================*/
+.block {
+     position: relative;
+}
+.number_box {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   background-color: #5e42b0;
+}
+.number_box .list_number {
+    margin-right: 0;
+    color: #f5f6f7;
+    line-height: 14px;
+    padding-bottom: 7px;
+}
+.number_box .list_number::after{
+    background-color: #ffffff;
+    opacity: 0.3;
+}
 
 
 
@@ -314,6 +337,28 @@ body {
      top: 69px;
      z-index: 10;
 }
+/*----------------------players---------------------*/
+
+.image {
+    width:100%;
+}
+.number_box { 
+   
+   bottom: -12px;
+   left: 20px;
+   width: 70px;
+   height: 70px;
+   z-index: 2;
+}
+
+.beactive_article{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.beactive_article .list_title {
+   padding-top: 33px;
+   margin-bottom: 23px;
+}
 
 }
 
@@ -434,6 +479,27 @@ body {
 .players_heading {
     margin-left: 0;
     margin-right: auto;
+}
+/*----------------------players---------------------*/
+
+.image {
+    width:100%;
+}
+.number_box { 
+   bottom: -36px;
+   left: 20px;
+   width: 116px;
+   height: 116px;
+   z-index: 2;
+}
+
+.beactive_article{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.beactive_article .list_title {
+   padding-top: 54px;
+   margin-bottom: 37px;
 }
 }
 
@@ -556,6 +622,42 @@ body {
     margin-left: 0;
     margin-right: auto;
 }
+/*----------------------players---------------------*/
+.list_{
+    display: flex;
+    width: 100%;
+}
+
+.block {
+width: 50%;
+}
+
+.image{
+	max-width: 100%
+}
+
+.number_box { 
+   right: -58px;
+   top: 50%;
+   width: 116px;
+   height: 116px;
+   z-index: 2;
+}
+
+.beactive_article{
+  padding-left:7%; 
+  align-self: center;
+  width: 50%; 
+}
+.beactive_article .list_title {
+   font-size: 80px;
+   margin-bottom: 116px;
+}
+
+.beactive_article .list_text{
+	width: 65%;
+}
+
 }
 
 @media (min-width: 961px) and (max-width: 1280px){

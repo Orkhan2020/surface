@@ -38,14 +38,14 @@ body {
     font-family: Arial, "Open sans", sans-serif;
     
 }
-.header {
+.section {
     position: relative;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
 }
 
-.header::before {
+.section::before {
     content: "";
     background-color: #0a0e34;
     position: absolute;
@@ -83,6 +83,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content:space-between;
+    
 }
 
 .title {
@@ -215,23 +216,51 @@ body {
     background-color: #ffffff;
     opacity: 0.3;
 }
+/*========================================================SECTONS==============================================================*/
+.footer_logo {
+	display: block;
+	background-color: #5e42b0;
+	border-radius: 20px;
+	fill: #ffffff;
+	padding: 14px 10px;
+	z-index: 11;
+	margin-right: auto;
+	margin-left: auto;
+}
 
+.footer_title {
+	align-self: center;
+}
 
-
+.footer_subtitle {
+   color: #9b8ec1;
+   font-family: "Open Sans";
+   font-weight: 400;
+   text-transform: uppercase;
+   letter-spacing: 0.7px;
+}
 @media (max-width: 767px) {
-.header {
+.section {
     background-image: url(../img/football_767.jpg);
 }
-
+.game {
+    background-image: url(../img/game_767.jpg);
+}
 }
 @media (min-width: 768px) and (max-width: 1280px) {
-    .header {
+    .section {
     background-image: url(../img/football_1280.jpg);
+}
+.game {
+    background-image: url(../img/game_1280.jpg);
 }
 }
 @media (min-width: 1281px) {
-    .header {
+    .section {
     background-image: url(../img/football_1920.jpg);
+}
+.game {
+    background-image: url(../img/game_1920.jpg);
 }
 }
 
@@ -246,6 +275,10 @@ body {
     margin-bottom: 13.6rem;
     width: 133px;
 }
+.content {
+
+}
+
 .title {
     font-size: 28px;
     letter-spacing: 1.4px;
@@ -343,7 +376,6 @@ body {
     width:100%;
 }
 .number_box { 
-   
    bottom: -12px;
    left: 20px;
    width: 70px;
@@ -359,6 +391,32 @@ body {
    padding-top: 33px;
    margin-bottom: 23px;
 }
+/*----------------------WORK IT---------------------*/
+.footer_logo {
+	margin-top: 10rem;
+	margin-bottom: 6rem;
+	width: 72px;
+	height: 74px;
+}
+
+.footer_content {
+	margin-bottom: 7.6rem;
+}
+.footer_title {
+  margin-bottom: 1rem;
+}
+.footer_subtitle {
+	align-self: center;
+    font-size: 12px;
+    margin-left: 0px;
+}
+.game .downloads-item {
+	margin-bottom: 8.2rem;
+}
+.game .logo {
+	margin-bottom: 1rem;
+}
+
 
 }
 
@@ -368,7 +426,9 @@ body {
     margin-bottom: 18rem;
     width: 205px;
 }
-
+.content {
+	
+}
 .title {
     font-size: 64px;
     letter-spacing: 3.52px;
@@ -502,6 +562,41 @@ body {
    padding-top: 54px;
    margin-bottom: 37px;
 }
+/*----------------------WORK IT---------------------*/
+
+.footer_logo {
+	margin-top: 12.6rem;
+	margin-bottom: 8rem;
+	width: 130px;
+	height: 137px;
+}
+
+.footer_content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 20.7rem;
+}
+
+.footer_title {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2.7rem;
+}
+.footer_subtitle {
+	width: 100%;
+	align-self: center;
+    font-size: 26px;
+    margin-left: 0px;
+}
+.game .downloads-item {
+	margin-bottom: 5.5rem;
+}
+.game .logo {
+	margin-bottom: 2.4rem;
+}
+
 }
 
 
@@ -664,6 +759,44 @@ width: 50%;
 }
 .find_contact .number_box { 
    left: -58px;
+}
+
+/*----------------------WORK IT---------------------*/
+.container {
+	display: block;
+}
+
+
+.block_footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 229px;
+	padding-bottom: 151px;
+}
+.footer_logo {
+	width: 130px;
+	height: 137px;
+	margin-left: 0;
+	margin-right: 37px;
+}
+
+
+
+.footer_title {
+  margin-bottom: 2rem;
+}
+.footer_subtitle {
+    font-size: 26px;
+    margin-left: 0px;
+}
+.game .downloads-item {
+	margin-bottom: 5.5rem;
+}
+.game .logo {
+	text-align: center;
+	margin-top: 0;
+	padding-bottom: 2.4rem;
 }
 
 }

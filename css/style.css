@@ -762,10 +762,9 @@ width: 50%;
 }
 
 /*----------------------WORK IT---------------------*/
-.container {
+.game .container {
+	flex-direction: column;
 }
-
-
 .block_footer {
 	display: flex;
 	justify-content: center;
@@ -780,8 +779,6 @@ width: 50%;
 	margin-right: 37px;
 }
 
-
-
 .footer_title {
   margin-bottom: 2rem;
 }
@@ -790,12 +787,12 @@ width: 50%;
     margin-left: 0px;
 }
 .game .downloads-item {
-	margin-bottom: 5.5rem;
+	margin-bottom: 20rem;
 }
 .game .logo {
 	text-align: center;
 	margin-top: 0;
-	padding-bottom: 2.4rem;
+	margin-bottom: 0; 
 }
 
 }

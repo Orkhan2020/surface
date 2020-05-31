@@ -125,9 +125,10 @@ body {
 }
 
 .heading {
-    padding-right: 20px;
-    padding-left: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
+
 
 .athlets_title {
   color: #e7e7e7;
@@ -655,6 +656,7 @@ body {
     padding-top: 85px;
     font-size: 80px;
 }
+
 .heading {
     margin-left: auto;
     display: flex;
@@ -694,6 +696,10 @@ body {
      top: 27px;
      z-index: 10;
 }
+
+._connection {
+	padding-right: 11%;
+}
 .players_container {
     position: relative;
 }
@@ -712,11 +718,12 @@ body {
 .players_title {
     margin-left: 0;
     margin-right: auto;
-    padding-left: 20px;
+    padding-left: 8%;
 }
 .players_heading {
     margin-left: 0;
     margin-right: auto;
+    padding-left: 8%;
 }
 /*----------------------players---------------------*/
 .list_{

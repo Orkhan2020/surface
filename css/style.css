@@ -637,10 +637,17 @@ body {
    padding: 14px;
    font-size: 14px;
    letter-spacing: 0.7px;
+   box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, 1px 1px 1px #4d3191;
+}
+.downloads-link:active {
+    top: 2px;
+    left: 1px;
+    box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
 }
 .downloads-link:hover {
    background-color: #4d3191;
-   color: #bdace3; 
+   color: #bdace3;
+   transition: .2s linear; 
 }
 .icon {
    width: 40px;

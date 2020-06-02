@@ -317,7 +317,7 @@ body {
 /*==========HEADER===========*/
 .athlets_title {
     align-self: flex-start;
-    font-size: 50px;
+    font-size: calc(9.375vw + 20px);
     margin-bottom: 245px;
     margin-left: 20px; 
 }
@@ -326,19 +326,19 @@ body {
 }
 
 .list_title {
-    font-size: 23px;
+    font-size: calc(2.81vw + 14px);
     letter-spacing: 1.15px;
     padding-top: 83px;
     margin-bottom: 27px;
 }
 .list_number {
     vertical-align: top;
-    font-size:14px;
+    font-size: calc(1.25vw + 10px);
     letter-spacing: 0.7px;
 }
 .list_text {
     width: 100%;
-    font-size: 15px;
+    font-size: calc(1.56vw + 10px);
     letter-spacing: 0.75px;
     padding-bottom: 50px;
 }
@@ -381,8 +381,8 @@ body {
 .number_box { 
    bottom: -12px;
    left: 20px;
-   width: 70px;
-   height: 70px;
+   width: calc(14.375vw + 24px);
+   height: calc(14.375vw + 24px);
    z-index: 2;
 }
 
@@ -490,7 +490,7 @@ body {
 }
 .list_number {
     vertical-align: top;
-    font-size:14px;
+    font-size:18px;
     letter-spacing: 0.9px;
 }
 .list_text {

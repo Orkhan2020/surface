@@ -120,10 +120,6 @@ body {
 }
 
 /*========================================================HEADER==============================================================*/
-.athlets {
-    margin-bottom: 49px;
-}
-
 .heading {
 	padding-left: 20px;
 	padding-right: 20px;
@@ -319,6 +315,7 @@ body {
     font-size: calc(9.375vw + 20px);
     margin-bottom: 245px;
     margin-left: 20px; 
+    padding-top: 25px;
 }
 .connection {
     background-color: #fafafa;
@@ -353,7 +350,7 @@ body {
      height: 281px;
      position: absolute;
      left: 0;
-     top: 69px;
+     top: 94px;
      z-index: 10;
 }
 /*----------------------athlets---------------------*/
@@ -765,7 +762,7 @@ body {
     
 }
 /*----------------------players---------------------*/
-.list_{
+._container{
     display: flex;
     width: 100%;
 }
@@ -775,7 +772,7 @@ width: 50%;
 }
 
 .image{
-	max-width: 100%
+	width: 100%
 }
 
 .number_box { 
